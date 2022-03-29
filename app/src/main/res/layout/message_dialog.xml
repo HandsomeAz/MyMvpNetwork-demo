@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="发现新版本"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_above="@+id/ll_bottom_button"
+        android:layout_below="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更新说明"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="确认"
+            android:textSize="14sp"
+            android:background="@drawable/btn_background1"
+            android:id="@+id/btn_submit"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:textSize="14sp"
+            android:background="@drawable/btn_background"
+            android:id="@+id/btn_cancel"
+            />
+    </LinearLayout>
+</RelativeLayout>
